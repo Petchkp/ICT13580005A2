@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="ICT13580005A2.ProductNewPage"
     BackgroundColor="Blue">
+
     <ScrollView>
 
         <StackLayout
@@ -25,6 +26,7 @@
                 FontSize="14"
                 TextColor="Purple"
                 Margin="0,10,0,0"/>
+            
             <Entry
                 Placeholder="ช่ือสินค้า"
                 Keyboard="Text"
@@ -36,6 +38,7 @@
                 Text="รายละเอียด"
                 FontSize="14" 
                 TextColor="Purple"/>
+            
             <Entry
                 Placeholder="รายละเอียด"
                 Keyboard="Text"
@@ -48,6 +51,7 @@
                 Text="หมวดสินค้า"
                 FontSize="14" 
                 TextColor="Purple"/>
+            
             <Picker
                 x:Name="categoryPicker"
                 Title="เลือกหมวดสินค้า"/>
@@ -56,6 +60,7 @@
                 Text="ราคาสินค้า"
                 FontSize="14" 
                 TextColor="Purple"/>
+            
             <Entry
                 x:Name="productPriceEntry"
                 Placeholder="ราคาสินค้า"
@@ -67,6 +72,7 @@
                 Text="ราคาขาย"
                 FontSize="14" 
                 TextColor="Purple"/>
+            
             <Entry
                 x:Name="sellPriceEntry"
                 Placeholder="ราคาขาย"
@@ -78,6 +84,7 @@
                 Text="จำนวนสินค้าในสต๊อก"
                 FontSize="14" 
                 TextColor="Purple"/>
+            
             <Entry
                 Placeholder="จำนวนสินค้าในสต๊อก"
                 Keyboard="Numeric"
@@ -87,7 +94,8 @@
                 Margin="0,0,0,20"/>
 
             <Grid
-                Margin="0,10,0,0">    
+                Margin="0,10,0,0">
+                
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
@@ -108,6 +116,7 @@
                     FontAttributes="Bold"
                     BackgroundColor="White"
                     Grid.Column="1"/>
+                
             </Grid>       
             
 

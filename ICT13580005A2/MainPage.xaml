@@ -6,6 +6,7 @@
     Title="Petch Shop">
 
     <ContentPage.ToolbarItems>
+        
         <ToolbarItem
             Text="New"
             x:Name="newButton"/>
@@ -17,9 +18,13 @@
         RowHeight="100">
 
         <ListView.ItemTemplate>
+            
             <DataTemplate>
+                
                 <ViewCell>
+                    
                     <ViewCell.ContextActions>
+                        
                         <MenuItem
                             Text="Edit"
                             CommandParameter="{Binding .}"
@@ -41,9 +46,11 @@
 
                         <Image
                             BackgroundColor="Silver"
-                            HeightRequest="100"/>
+                            HeightRequest="100"
+                            Source="http://itprojects.payap.ac.th/payap2/research/info/wp-content/plugins/special-recent-posts/images/no-thumb.png"/>
 
                         <StackLayout
+                            
                             Grid.Column="1"
                             Orientation="Vertical">
 
@@ -53,7 +60,8 @@
                                 TextColor="Navy"/>  
                             
                             <Label
-                                Text="{Binding Descriptions}"
+                                Text="{Binding Description}"
+                                TextColor="Gray"
                                 LineBreakMode="TailTruncation"/>
                             
                             <Label
@@ -61,6 +69,7 @@
                             
                             <Label
                                 Text="{Binding Stock, StringFormat='สินค้าคงเหลือ {0}'}"/>
+                            
                         </StackLayout>
                         
                         <Button
@@ -71,11 +80,15 @@
                             BackgroundColor="Silver"
                             VerticalOptions="End"
                             HeightRequest="50"/>
+                        
                     </Grid>
                     
                 </ViewCell>
                 
             </DataTemplate>
+            
         </ListView.ItemTemplate>
+        
     </ListView>
+    
 </ContentPage>

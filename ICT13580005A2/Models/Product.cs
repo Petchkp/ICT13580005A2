@@ -11,7 +11,7 @@ namespace ICT13580005A2.Models
         [MaxLength(200)]
         public string Name { get; set; }
 
-        public string Descriptions { get; set; }
+        public string Description { get; set; }
 
         [NotNull]
         [MaxLength(100)]
@@ -20,6 +20,5 @@ namespace ICT13580005A2.Models
         public decimal ProductPrice { get; set; }
         public decimal SellPrice { get; set; }
         public int Stock { get; set; }
- 
     }
 }

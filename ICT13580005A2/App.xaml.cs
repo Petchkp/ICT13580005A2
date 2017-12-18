@@ -7,10 +7,10 @@ namespace ICT13580005A2
     {
         public static DbHelper DbHelper { get; set; }
 
-        public App()
-        {
-            InitializeComponent();
-        }
+		public App()
+		{
+			InitializeComponent();
+		}
 
         public App(string dbPath)
         {

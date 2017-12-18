@@ -15,7 +15,8 @@ namespace ICT13580005A2
 
             this.product = product;
 
-            titleLabel.Text = product == null ? "เพิ่มสินค้าใหม่" : "แก้ไขสินค้า";
+            titleLabel.Text = product == null ? "เพิ่มสินค้าใหม่" : "แก้ไข้ข้อมูลสินค้า";
+
             saveButtun.Clicked += SaveButtun_Clicked;
             cancelButtun.Clicked += CancelButtun_Clicked;
 
@@ -28,7 +29,7 @@ namespace ICT13580005A2
             if (product != null)
             {
                 nameEntry.Text = product.Name;
-                descriptionEditor.Text = product.Descriptions;
+                descriptionEditor.Text = product.Description;
                 categoryPicker.SelectedItem = product.Category;
                 productPriceEntry.Text = product.ProductPrice.ToString();
                 sellPriceEntry.Text = product.SellPrice.ToString();
@@ -46,7 +47,7 @@ namespace ICT13580005A2
                 {
                     product = new Product();
                     product.Name = nameEntry.Text;
-                    product.Descriptions = descriptionEditor.Text;
+                    product.Description = descriptionEditor.Text;
                     product.Category = categoryPicker.SelectedItem.ToString();
                     product.ProductPrice = decimal.Parse(productPriceEntry.Text);
                     product.SellPrice = decimal.Parse(sellPriceEntry.Text);
@@ -58,7 +59,7 @@ namespace ICT13580005A2
                 else
                 {
 					product.Name = nameEntry.Text;
-					product.Descriptions = descriptionEditor.Text;
+					product.Description = descriptionEditor.Text;
 					product.Category = categoryPicker.SelectedItem.ToString();
 					product.ProductPrice = decimal.Parse(productPriceEntry.Text);
 					product.SellPrice = decimal.Parse(sellPriceEntry.Text);
@@ -73,9 +74,7 @@ namespace ICT13580005A2
 
         void CancelButtun_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PopModalAsync();
         }
     }
-
-
 }

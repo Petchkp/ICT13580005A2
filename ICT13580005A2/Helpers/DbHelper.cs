@@ -8,6 +8,7 @@ namespace ICT13580005A2.Helpers
     public class DbHelper
     {
         SQLiteConnection db;
+
         public DbHelper(string dbPath)
         {
             db = new SQLiteConnection(dbPath);
